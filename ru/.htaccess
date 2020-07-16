@@ -1,0 +1,2 @@
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /ru/index\.html\ HTTPS/
+RewriteRule ^ru/index\.html$ https://krausers.github.io/portfolio/ru/ [R=301,L]
