@@ -24,11 +24,13 @@ $(function() {
         $("#translate_nav").fadeToggle(600);
         $('#butmenu').timedDisable();
         $('body').toggleClass('stops');
+        $("#home").toggleClass('forstops');
     });
     $(".nonstop").on('click', function() {
         $("#menu, #closemenu").toggle();
         $("#hidemenu").toggle();
         $("#translate_nav").toggle();
         $('body').toggleClass('stops');
+        $("#home").toggleClass('forstops');
     });
 });
