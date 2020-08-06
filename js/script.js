@@ -1,3 +1,14 @@
+$.fn.timedDisable = function(time) {
+    if (time == null) { time = 500; }
+    return $(this).each(function() {
+        $(this).attr('disabled', 'disabled');
+        var disabledElem = $(this);
+        setTimeout(function() {
+            disabledElem.removeAttr('disabled');
+        }, time);
+    });
+};
+
 function send() {
     document.location.href = "https://mail.google.com/"
 }
